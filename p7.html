@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+   <title>Design System</title>
+   <style>
+    :root {
+   primary-color: hsla(107, 70%, 53%, 0.883);
+   background-color: #3c567f;
+    card-color: #e17b16;
+    text-color: #ecf0f1;
+
+   small-space: 10px;
+    medium-space: 20px;
+    large-space: 40px;
+
+    main-font:  sans-serif;
+}
+
+body {
+    background-color: var(background-color);
+    color: var(text-color);
+    font-family: var(main-font);
+}
+
+.container {
+    padding: var(medium-space);
+}
+
+h1 {
+    color: var(primary-color);
+    font-size: 36px;
+}
+
+.card {
+    background-color: var(card-color);
+    padding: var(medium-space);
+    border-radius: 10px;
+}
+
+button {
+    background-color: var(primary-color);
+    border: none;
+    padding: var(small-space) var(medium-space);
+    cursor: pointer;
+}
+   </style>
+  </head>
+<body>
+<main class="container">
+        <h1> Design System</h1>
+
+        <section class="cards">
+            <h2>Typography</h2>
+            <p>This is a simple paragraph using CSS Design Tokens.</p>
+            <button>Explore More</button>
+        </section>
+    </main>
+    
+</body>
+</html>

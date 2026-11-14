@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+ <title>Tech Newspaper</title>
+ <style>
+    body {
+    margin: 0;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 4px double darkgreen;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+
+article {
+    padding: 30px;
+    background: dark greenyellow;
+    border: 1px solid darkgreen;
+}
+
+.main-news {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (max-width: 700px) {
+    .newspaper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-news {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:450px) {
+    .newspaper {
+        grid-template-columns: 1fr;
+    }
+    .main-news {
+        grid-column: span 1;
+    }
+}
+ </style>
+
+</head>
+<body>
+
+<header>
+    <h1>BST NEWS</h1>
+    <p>Education News</p>
+</header>
+
+<main class="newspaper">
+
+    <article class="main-news">
+        <h2>The Future of Artificial Intelligence</h2>
+        <p>Artificial Intelligence is changing the world through automation, research and innovation.</p>
+    </article>
+
+    <article>
+        <h2>Web Development</h2>
+        <p>HTML and CSS are important foundations of modern websites.</p>
+    </article>
+
+    <article>
+        <h2>Programming</h2>
+        <p>Learning programming improves logical thinking and problem-solving skills.</p>
+    </article>
+
+    <article>
+        <h2>Student Corner</h2>
+        <p>Daily practice helps students improve their technical knowledge.</p>
+    </article>
+
+</main>
+
+</body>
+</html>

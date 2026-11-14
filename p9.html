@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar and Cards</title>
+   <style>
+    body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
+   </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>My Website</h2>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/67f5cab6225dcf7a8c5efa83/1248289c-662a-4ee3-bd2a-7fcb756ca8c0/paradise-beech-forest-queenstown-nz.jpeg">
+            <h3>Forest</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CBJorho6YGePkRtqPY5gj9l2RwFyfdqGTNlddvpwwLiN5b6RyrkbjMJo&s=10">
+            <h3>Nature</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR62aNjEgbKa99khfF6b9oNwi8OiNKuRnDktUCQnRHWR3XO4-UntA9uUfzB&s=10">
+            <h3>Mountain</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/the-world-s-most-beautiful-lakes-lake-louise-2jpg-66d82e01afa1d.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*">
+            <h3>Lake</h3>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+   <title>Portfolio Layout</title>
+   <style>
+    body {
+    margin: 0;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(239, 81, 19);
+    padding: 20px 5px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: rgb(235, 6, 6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+main {
+    flex: 1;
+    padding: 80px 10%;
+}
+
+main h1 {
+    font-size: 45px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: darkgreen;
+    padding: 20px ;
+    flex-wrap: wrap;
+}
+   </style>
+   
+</head>
+<body>
+    
+    <header class="header">
+        <h2>AMANAT</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Work</a>
+            <a href="#">Projects</a>
+        </nav>
+
+        <button>Let's Connect</button>
+    </header>
+
+    <main>
+        <section>
+            <h1>Building My Future</h1>
+            <p>Student , Programmer , Developer</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> &copy  AMANAT</p>
+        <p>Designed with HTML and CSS</p>
+    </footer>
+    
+</body>
+</html>

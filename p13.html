@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <title>Flexbox vs Grid</title>
+    <style>
+        body {
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgb(239, 170, 8);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 30px;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.box {
+    padding: 20px;
+    background: #34495e;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgb(220, 16, 234);
+}
+
+@media (max-width: 600px) {
+    .comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+    </style>
+   
+</head>
+<body>
+
+<header class="navbar">
+    <h2>AMANAT LOHT</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Flexbox vs CSS Grid</h1>
+
+    <section class="comparison">
+
+        <article class="box">
+            <h2>Flexbox</h2>
+            <p>Flexbox is useful for one-dimensional layouts.</p>
+        </article>
+
+        <article class="box">
+            <h2>CSS Grid</h2>
+            <p>Grid is useful for two-dimensional layouts.</p>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy amanat</p>
+</footer>
+
+</body>
+</html>
